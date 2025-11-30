@@ -1,0 +1,40 @@
+{
+  "name": "prueba_antigravity",
+  "version": "1.0.0",
+  "description": "Este es el repositorio **Prueba_Antigravity** creado por Antigravity.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julianrojos/Prueba_Antigravity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julianrojos/Prueba_Antigravity/issues"
+  },
+  "homepage": "https://github.com/julianrojos/Prueba_Antigravity#readme",
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "storybook": "^10.1.2",
+    "@storybook/react-vite": "^10.1.2",
+    "@chromatic-com/storybook": "^4.1.3",
+    "@storybook/addon-vitest": "^10.1.2",
+    "@storybook/addon-a11y": "^10.1.2",
+    "@storybook/addon-docs": "^10.1.2",
+    "@storybook/addon-onboarding": "^10.1.2",
+    "vitest": "^4.0.14",
+    "playwright": "^1.57.0",
+    "@vitest/browser-playwright": "^4.0.14",
+    "@vitest/coverage-v8": "^4.0.14"
+  }
+}
