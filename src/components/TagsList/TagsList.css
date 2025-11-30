@@ -1,0 +1,18 @@
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Variante Small */
+.tags-list--small {
+  gap: 4px;
+}
+
+/* Variante Medium */
+.tags-list--medium {
+  gap: 8px;
+}
+
