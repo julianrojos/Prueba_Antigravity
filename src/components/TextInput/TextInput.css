@@ -1,0 +1,94 @@
+.text-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  position: relative;
+  width: 242px;
+}
+
+.text-input__label {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #483f3f;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.text-input__field {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+  position: relative;
+  width: 100%;
+  min-height: 36px;
+}
+
+.text-input__input {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.text-input__input::placeholder {
+  color: #716666;
+  opacity: 1;
+}
+
+.text-input__icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.text-input__message {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+/* Estados del input */
+.text-input__field--default {
+  border-color: #9a9090;
+}
+
+.text-input__field--active {
+  border-color: #9a9090;
+}
+
+.text-input__field--success {
+  border-color: #3cb371;
+}
+
+.text-input__field--error {
+  border-color: #b22222;
+}
+
