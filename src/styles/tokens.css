@@ -7,4 +7,6 @@
   --font-size-body-16: 16px;
   --radius-tag: 8px;
   --tag-border-muted: rgba(0, 0, 0, 0.06);
+  --spacing-s: 4px;
+  --spacing-m: 8px;
 }
