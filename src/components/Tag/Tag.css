@@ -1,8 +1,19 @@
+:root {
+  /* Variables de Figma aplicadas al componente */
+  --colors-secondary-200: #c9e0be;
+  --colors-secondary-900: #35412f;
+  --font-family-nunitosans: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size-body-14: 14px;
+  --font-size-body-16: 16px;
+  --radius-tag: 8px;
+  --tag-border-muted: rgba(0, 0, 0, 0.06);
+}
+
 .tag {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background-color: #c9e0be;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 8px;
+  font-family: var(--font-family-nunitosans, 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif);
+  background-color: var(--colors-secondary-200, #c9e0be);
+  border: 1px solid var(--tag-border-muted, rgba(0, 0, 0, 0.06));
+  border-radius: var(--radius-tag, 8px);
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -11,11 +22,11 @@
 }
 
 .tag__text {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family-nunitosans, 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif);
   font-weight: 400;
   font-style: normal;
   line-height: 100%;
-  color: #35412f;
+  color: var(--colors-secondary-900, #35412f);
   white-space: nowrap;
   flex-shrink: 0;
   margin: 0;
@@ -27,7 +38,7 @@
 }
 
 .tag--small .tag__text {
-  font-size: 14px;
+  font-size: var(--font-size-body-14, 14px);
 }
 
 /* Variante Medium */
@@ -36,6 +47,6 @@
 }
 
 .tag--medium .tag__text {
-  font-size: 16px;
+  font-size: var(--font-size-body-16, 16px);
 }
 
