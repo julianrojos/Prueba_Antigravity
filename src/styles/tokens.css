@@ -1,0 +1,10 @@
+:root {
+  /* Variables globales provenientes de Figma */
+  --colors-secondary-200: #c9e0be;
+  --colors-secondary-900: #35412f;
+  --font-family-nunitosans: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size-body-14: 14px;
+  --font-size-body-16: 16px;
+  --radius-tag: 8px;
+  --tag-border-muted: rgba(0, 0, 0, 0.06);
+}
