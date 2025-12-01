@@ -5,7 +5,7 @@ import './TextInput.css';
 /**
  * Icono de información simple
  */
-const InfoIcon = ({ color = '#483f3f' }) => (
+const InfoIcon = ({ color = 'var(--text-fields-label-color, #483f3f)' }) => (
   <svg
     width="24"
     height="24"
@@ -49,45 +49,32 @@ export const TextInput = ({
   onChange,
   ...props
 }) => {
-  const getBorderColor = () => {
-    switch (type) {
-      case 'success':
-        return '#3cb371';
-      case 'error':
-        return '#b22222';
-      case 'active':
-        return '#9a9090';
-      default:
-        return '#9a9090';
-    }
-  };
-
   const getTextColor = () => {
     if (type === 'active' && value) {
-      return '#483f3f';
+      return 'var(--text-fields-text-color-filled, #483f3f)';
     }
-    return '#716666';
+    return 'var(--text-fields-text-color-empty, #716666)';
   };
 
   const getMessageColor = () => {
     switch (type) {
       case 'success':
-        return '#3cb371';
+        return 'var(--text-fields-success, #3cb371)';
       case 'error':
-        return '#b22222';
+        return 'var(--text-fields-error, #b22222)';
       default:
-        return '#483f3f';
+        return 'var(--text-fields-message-color-default, #483f3f)';
     }
   };
 
   const getIconColor = () => {
     switch (type) {
       case 'success':
-        return '#3cb371';
+        return 'var(--text-fields-success, #3cb371)';
       case 'error':
-        return '#b22222';
+        return 'var(--text-fields-error, #b22222)';
       default:
-        return '#483f3f';
+        return 'var(--text-fields-label-color, #483f3f)';
     }
   };
 
@@ -100,7 +87,6 @@ export const TextInput = ({
       )}
       <div
         className={['text-input__field', `text-input__field--${type}`].join(' ')}
-        style={{ borderColor: getBorderColor() }}
       >
         <input
           type="text"

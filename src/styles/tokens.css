@@ -5,8 +5,18 @@
   --font-family-nunitosans: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-size-body-14: 14px;
   --font-size-body-16: 16px;
+  --font-size-body-12: 12px;
   --radius-tag: 8px;
+  --radius-text-field: 12px;
   --tag-border-muted: rgba(0, 0, 0, 0.06);
   --spacing-s: 4px;
   --spacing-m: 8px;
+  --text-fields-label-color: #483f3f;
+  --text-fields-field-bg-default: #ffffff;
+  --text-fields-border-color-default: #9a9090;
+  --text-fields-text-color-empty: #716666;
+  --text-fields-text-color-filled: #483f3f;
+  --text-fields-message-color-default: #483f3f;
+  --text-fields-success: #3cb371;
+  --text-fields-error: #b22222;
 }
